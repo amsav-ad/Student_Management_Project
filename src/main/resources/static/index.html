@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>School Management System</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- LOGIN SECTION -->
+
+	<div class="login-container" id="loginSection">
+
+		<div class="login-card">
+
+			<div class="login-icon">🎓</div>
+
+			<h1>Welcome Back!</h1>
+
+			<p class="subtitle">School Management System</p>
+
+			<form id="loginForm">
+
+				<div class="form-group">
+
+					<label for="email">Email Address</label>
+
+					<input type="email" id="email" placeholder="Enter your email" required>
+
+				</div>
+
+				<div class="form-group">
+
+					<label for="password">Password</label>
+
+					<input type="password" id="password" placeholder="Enter your password" required>
+
+				</div>
+
+				<button type="submit" class="login-button">
+					Login
+				</button>
+
+				<p id="loginMessage"></p>
+
+			</form>
+
+			<p class="login-footer">
+				Student & Teacher Portal
+			</p>
+
+			<div class="auth-switch">
+
+				<p>Don't have an account?</p>
+
+				<button type="button" id="showRegisterButton">
+					Create Account
+				</button>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- REGISTRATION SECTION -->
+
+	<div class="login-container" id="registerSection" hidden>
+
+		<div class="login-card">
+
+			<div class="login-icon">📝</div>
+
+			<h1>Create Account</h1>
+
+			<p class="subtitle">Join School Management System</p>
+
+			<form id="registerForm">
+
+				<div class="form-group">
+
+					<label for="registerRole">Register As</label>
+
+					<select id="registerRole" required>
+
+						<option value="">Select Account Type</option>
+
+						<option value="student">Student</option>
+
+						<option value="teacher">Teacher</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-group">
+
+					<label for="registerName">Full Name</label>
+
+					<input type="text" id="registerName" placeholder="Enter your full name" required>
+
+				</div>
+
+				<div class="form-group">
+
+					<label for="registerEmail">Email Address</label>
+
+					<input type="email" id="registerEmail" placeholder="Enter your email" required>
+
+				</div>
+
+				<div class="form-group">
+
+					<label for="registerPassword">Password</label>
+
+					<input type="password" id="registerPassword" placeholder="Minimum 8 characters" minlength="8"
+						required>
+
+				</div>
+
+				<button type="submit" class="login-button">
+					Register
+				</button>
+
+				<p id="registerMessage"></p>
+
+			</form>
+
+			<div class="auth-switch">
+
+				<p>Already have an account?</p>
+
+				<button type="button" id="showLoginButton">
+					Back to Login
+				</button>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- DASHBOARD SECTION -->
+
+	<div class="dashboard" id="dashboardSection" hidden>
+
+		<aside class="sidebar">
+
+			<h2>🎓 School Portal</h2>
+
+			<nav id="sidebarNavigation">
+
+			</nav>
+
+			<button id="logoutButton" class="logout-button">
+				Logout
+			</button>
+
+		</aside>
+
+		<main class="main-content">
+
+			<header class="topbar">
+
+				<div>
+
+					<h1 id="welcomeHeading">Dashboard</h1>
+
+					<p id="userRole">Welcome to your portal</p>
+
+				</div>
+
+				<div class="profile-icon">👤</div>
+
+			</header>
+
+			<section id="dashboardContent">
+
+				<div class="welcome-card">
+
+					<h2>Welcome to School Management System</h2>
+
+					<p>Your school activities, all in one place.</p>
+
+				</div>
+
+				<div class="dashboard-cards" id="dashboardCards">
+
+				</div>
+
+			</section>
+
+		</main>
+
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
